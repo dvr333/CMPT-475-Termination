@@ -62,7 +62,7 @@ rule SupervisorMachineProgram(m) = {
 	ReactToEvents(m)
 	if not active(m) and token(m) != undef then {
 		InitializeMachine(m)
-		if colour(m) = white and token(m) = white
+		if colour(m) = white and token(m) = whiteToken
 			ReportGlobalTermination
 		else {
 			InitializeMachine(m)
