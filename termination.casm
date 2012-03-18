@@ -1,0 +1,88 @@
+CoreASM termination
+
+use Standard
+use BasicASM
+use Time
+use Math
+
+universe Agents = {cluster, environment}
+
+enum Colour = {black, white}
+enum Token = {blackToken, whiteToken}
+
+function colour : NUMBER -> Colour
+function token : NUMBER -> Token
+function computation : NUMBER -> NUMBER
+
+function active : NUMBER -> BOOLEAN
+function BlackTokenEvent : NUMBER -> BOOLEAN
+function WhiteTokenEvent : NUMBER -> BOOLEAN
+function SendMessageEvent : NUMBER -> BOOLEAN
+
+init InitRule
+
+rule InitRule = {
+	extend Agents with 0 do
+		program(0) := @SupervisorMachineProgram(0)
+	forall m in [1 .. 12] do {
+		InitializeMachine(m)
+		extend Agents with m do
+			program(m) := @RegularMachineProgram(m)
+		if random < 0.5 then
+			active(m) := true
+	}
+}
+
+rule InitializeMachine(m) = {
+	colour(m) := white
+	token(m) := undef
+}
+
+rule ReactToEvents(m) = {
+	if BlackTokenEvent(m) then
+		token(m) := blackToken
+	if WhiteTokenEvent(m) then
+		token(m) := whiteToken
+	if SendMessageEvent(m) then
+		colour(m) := black
+}
+
+rule RegularMachineProgram(m) = {
+	ReactToEvents(m)
+	if not active(m) and token(m) != undef then {
+		InitializeMachine(m)
+		if colour(m) = black then
+			ForwardToken(blackToken, m-1)
+		else
+			ForwardToken(token(m), m-1)
+	}
+}
+
+rule SupervisorMachineProgram(m) = {
+	ReactToEvents(m)
+	if not active(m) and token(m) != undef then {
+		InitializeMachine(m)
+		if colour(m) = white and token(m) = white
+			ReportGlobalTermination
+		else {
+			InitializeMachine(m)
+			ForwardToken(whiteToken, 12)
+		}
+	}
+}
+
+rule ForwardToken(token, m) = {
+	if token = black then {
+		BlackTokenEvent(m) := true
+		WhiteTokenEvent(m) := false
+	}
+	else {
+		WhiteTokenEvent(m) := true
+		BlackTokenEvent(m) := false
+	}
+}
+
+rule SendMessage(source, target) = {
+	colour(source) := black
+	active(target) := true
+}
