@@ -5,32 +5,54 @@ use BasicASM
 use Time
 use Math
 
-universe Agents = {cluster, environment}
+universe Agents = {m0, m1, m2, m3, m4, m5, m6, m7, m8}
+universe Computation = {c1, c2, c3}
 
 enum Colour = {black, white}
 enum Token = {blackToken, whiteToken}
 
-function colour : NUMBER -> Colour
-function token : NUMBER -> Token
-function computation : NUMBER -> NUMBER
+function colour : Agents * Computation -> Colour
+function token : Agents * Computation -> Token
 
-function active : NUMBER -> BOOLEAN
-function BlackTokenEvent : NUMBER -> BOOLEAN
-function WhiteTokenEvent : NUMBER -> BOOLEAN
-function SendMessageEvent : NUMBER -> BOOLEAN
+derived nextMachine = {
+	m8 -> m7,
+	m7 -> m6,
+	m6 -> m5,
+	m5 -> m4,
+	m4 -> m3,
+	m3 -> m2,
+	m2 -> m1,
+	m1 -> m0,
+	m0 -> m8
+}
+
+function active : Agents * Computation -> BOOLEAN
+function BlackTokenEvent : Agents * Computation -> BOOLEAN
+function WhiteTokenEvent : Agents * Computation -> BOOLEAN
+function SendMessageEvent : Agents * Computation -> BOOLEAN
 
 init InitRule
 
 rule InitRule = {
-	extend Agents with 0 do
-		program(0) := @SupervisorMachineProgram(0)
-	forall m in [1 .. 12] do {
-		InitializeMachine(m)
-		extend Agents with m do
-			program(m) := @RegularMachineProgram(m)
-		if random < 0.5 then
-			active(m) := true
-	}
+//	extend Agents with 0 do
+//		program(0) := @SupervisorMachineProgram(0)
+//	forall m in [1 .. 12] do {
+//		InitializeMachine(m)
+//		extend Agents with m do
+//			program(m) := @RegularMachineProgram(m)
+//		if random < 0.5 then
+//			active(m) := true
+//	}
+	program(m1) := @RegularMachineProgram
+	program(m2) := @RegularMachineProgram
+	program(m3) := @RegularMachineProgram
+	program(m4) := @RegularMachineProgram
+	program(m5) := @RegularMachineProgram
+	program(m6) := @RegularMachineProgram
+	program(m7) := @RegularMachineProgram
+	program(m8) := @RegularMachineProgram
+	program(m0) := @SupervisorMachineProgram
+	program(self) := undef
 }
 
 rule InitializeMachine(m) = {
@@ -38,35 +60,35 @@ rule InitializeMachine(m) = {
 	token(m) := undef
 }
 
-rule ReactToEvents(m) = {
-	if BlackTokenEvent(m) then
-		token(m) := blackToken
-	if WhiteTokenEvent(m) then
-		token(m) := whiteToken
-	if SendMessageEvent(m) then
-		colour(m) := black
+rule ReactToEvents(m, c) = {
+	if BlackTokenEvent(m, c) then
+		token(m, c) := blackToken
+	if WhiteTokenEvent(m, c) then
+		token(m, c) := whiteToken
+	if SendMessageEvent(m, c) then
+		colour(m, c) := black
 }
 
-rule RegularMachineProgram(m) = {
-	ReactToEvents(m)
-	if not active(m) and token(m) != undef then {
-		InitializeMachine(m)
-		if colour(m) = black then
-			ForwardToken(blackToken, m-1)
+rule RegularMachineProgram = {
+	ReactToEvents(self)
+	if not active(self) and token(self) != undef then {
+		InitializeMachine(self)
+		if colour(self) = black then
+			ForwardToken(blackToken, nextMachine(self))
 		else
-			ForwardToken(token(m), m-1)
+			ForwardToken(token(self), nextMachine(self))
 	}
 }
 
-rule SupervisorMachineProgram(m) = {
-	ReactToEvents(m)
-	if not active(m) and token(m) != undef then {
-		InitializeMachine(m)
-		if colour(m) = white and token(m) = whiteToken
+rule SupervisorMachineProgram = {
+	ReactToEvents(self)
+	if not active(self) and token(self) != undef then {
+		InitializeMachine(self)
+		if colour(self) = white and token(self) = whiteToken
 			ReportGlobalTermination
 		else {
-			InitializeMachine(m)
-			ForwardToken(whiteToken, 12)
+			InitializeMachine(self)
+			ForwardToken(whiteToken, nextMachine(self))
 		}
 	}
 }
