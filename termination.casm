@@ -1,3 +1,6 @@
+// Darius Yao
+// Dominic Renaud
+
 CoreASM termination
 
 use Standard
@@ -5,31 +8,21 @@ use BasicASM
 use Time
 use Math
 
-universe Agents = {m0, m1, m2, m3, m4, m5, m6, m7, m8}
-universe Computation = {c1, c2, c3}
+universe Agents = {m0, m1, m2, m3, m4, m5, m6, m7, m8, observer}
+// universe Computation = {c1, c2, c3}
 
 enum Colour = {black, white}
 enum Token = {blackToken, whiteToken}
+enum Status = {active, asleep}
 
-function colour : Agents * Computation -> Colour
-function token : Agents * Computation -> Token
+function colour : Agents -> Colour
+function token : Agents -> Token
+function status: Agents -> Status
+function number: Agents -> INTEGER
 
-derived nextMachine = {
-	m8 -> m7,
-	m7 -> m6,
-	m6 -> m5,
-	m5 -> m4,
-	m4 -> m3,
-	m3 -> m2,
-	m2 -> m1,
-	m1 -> m0,
-	m0 -> m8
-}
-
-function active : Agents * Computation -> BOOLEAN
-function BlackTokenEvent : Agents * Computation -> BOOLEAN
-function WhiteTokenEvent : Agents * Computation -> BOOLEAN
-function SendMessageEvent : Agents * Computation -> BOOLEAN
+function nextMachine : Agents -> Agents
+function BlackTokenEvent : Agents -> BOOLEAN
+function WhiteTokenEvent : Agents -> BOOLEAN
 
 init InitRule
 
@@ -43,6 +36,51 @@ rule InitRule = {
 //		if random < 0.5 then
 //			active(m) := true
 //	}
+
+	// Initialize the states for all the agents
+	forall m in Agents do {
+		status(m) := active
+		token(m) := undef
+		colour(m) := white
+		BlackTokenEvent(m) := false
+		WhiteTokenEvent(m) := false
+	}
+	
+	// Give each agent a numerical ID.  We need to use this to find out if an agent has awoken
+	// another agent that preceded it (therefore turning the current agent black).
+	//
+	// NOTE: Using something such as m3 < m5 is not a valid comparison, so I assume values
+	// declared as a universe type cannot be compared as if they were enums.
+	// That's why I introduced these values.
+	number(m0) := 0
+	number(m1) := 1
+	number(m2) := 2
+	number(m3) := 3
+	number(m4) := 4
+	number(m5) := 5
+	number(m6) := 6
+	number(m7) := 7
+	number(m8) := 8
+	
+	// Specifing the next machine in the sequence.
+	// NOTE: The previous code "derived nextMachine = { ..." did not compile, so I changed it
+	// into this form.
+	nextMachine(m0) := m8
+	nextMachine(m1) := m0
+	nextMachine(m2) := m1
+	nextMachine(m3) := m2
+	nextMachine(m4) := m3
+	nextMachine(m5) := m4
+	nextMachine(m6) := m5
+	nextMachine(m7) := m6
+	nextMachine(m8) := m7
+	
+	// This value is used to logically control the ouput the observer program prints
+	finished := false
+	
+	print "STARTING"
+	
+	// Initialize all the agents
 	program(m1) := @RegularMachineProgram
 	program(m2) := @RegularMachineProgram
 	program(m3) := @RegularMachineProgram
@@ -52,59 +90,163 @@ rule InitRule = {
 	program(m7) := @RegularMachineProgram
 	program(m8) := @RegularMachineProgram
 	program(m0) := @SupervisorMachineProgram
+	program(observer) := @ObserverProgram
 	program(self) := undef
 }
 
-rule InitializeMachine(m) = {
-	colour(m) := white
-	token(m) := undef
-}
+// Regular machine program for agents m1 to m8
+rule RegularMachineProgram = {	
+	// Try to get a token from the previous machine
+	if token(self) = undef then {
+		ReactToEvents(self)
+	}
+	// When token is received, reset the events (so the machine does not grab tokens repeatedly)
+	else {
+		BlackTokenEvent(self) := false
+		WhiteTokenEvent(self) := false
+	}
+	
+	// If the machine is active, it may wake up another machine.
+	// The code to simulate this event follows:
+	if status(self) = active and token(self) != undef then {
+		// 70% chance of waking up another machine
+		if random < 0.70 then {
+			seqblock
+			number := ceil(random * 1000 % 8)
+			
+			// Print some text to help with debugging
+			print "I am machine number " + number(self)
+			print "Machine to be woken up is " + number
 
-rule ReactToEvents(m, c) = {
-	if BlackTokenEvent(m, c) then
-		token(m, c) := blackToken
-	if WhiteTokenEvent(m, c) then
-		token(m, c) := whiteToken
-	if SendMessageEvent(m, c) then
-		colour(m, c) := black
-}
+			if number = 1 then target := m1
+			if number = 2 then target := m2
+			if number = 3 then target := m3
+			if number = 4 then target := m4
+			if number = 5 then target := m5
+			if number = 6 then target := m6
+			if number = 7 then target := m7
+			if number = 8 then target := m8
+			
+			// Wake up the target machine, and if the target machine preceded the current
+			// machine, then change the current machine's colour to black
+			status(target) := active
+			if number(self) < number then {
+					colour(self) := black
+			}
+			endseqblock
+		}
+		status(self) := asleep
+	}
 
-rule RegularMachineProgram = {
-	ReactToEvents(self)
-	if not active(self) and token(self) != undef then {
-		InitializeMachine(self)
-		if colour(self) = black then
-			ForwardToken(blackToken, nextMachine(self))
-		else
+	// When the machine falls asleep, it will forward the token to the next machine.
+	// This is done by calling 'FowardToken', which will generate a 'BlackTokenEvent' or a
+	// 'WhiteTokenEvent' for the receiving machine.
+	if status(self) = asleep and token(self) != undef then {		
+		if colour(self) = black then {
+			// If the machine's colour is black, revert to white
+			// Pass a black token to the next machine and discard this machine's token
+			colour(self) := white			
+			ForwardToken(blackToken, nextMachine(self))			
+			token(self) := undef
+		}
+		else {
+			// Pass a token of the same colour as the current token to the next machine
 			ForwardToken(token(self), nextMachine(self))
+			token(self) := undef
+		}
+		
+		//Print some text to check for errors
+		//The text printed here is more accurate because it reflects the status of all the
+		//machines after a token pass.  The observer function sometimes misses vital information
+		//because it only prints text at periodic intervals.
+		
+		//seqblock
+		//print "Machine Status"
+		//print "m0, colour token status: " + colour(m0) + ", " + token(m0) + ", " + status(m0)
+		//print "m1, colour token status: " + colour(m1) + ", " + token(m1) + ", " + status(m1)
+		//print "m2, colour token status: " + colour(m2) + ", " + token(m2) + ", " + status(m2)
+		//print "m3, colour token status: " + colour(m3) + ", " + token(m3) + ", " + status(m3)
+		//print "m4, colour token status: " + colour(m4) + ", " + token(m4) + ", " + status(m4)
+		//print "m5, colour token status: " + colour(m5) + ", " + token(m5) + ", " + status(m5)
+		//print "m6, colour token status: " + colour(m6) + ", " + token(m6) + ", " + status(m6)
+		//print "m7, colour token status: " + colour(m7) + ", " + token(m7) + ", " + status(m7)
+		//print "m8, colour token status: " + colour(m8) + ", " + token(m8) + ", " + status(m8)
+		//endseqblock
 	}
 }
 
+// Machine program for the supervising agent, m0
 rule SupervisorMachineProgram = {
-	ReactToEvents(self)
-	if not active(self) and token(self) != undef then {
-		InitializeMachine(self)
-		if colour(self) = white and token(self) = whiteToken
-			ReportGlobalTermination
+	// Send out the very first token, and then go to sleep
+	if status(self) = active and token(self) = undef then {
+		ForwardToken(whiteToken, nextMachine(self))
+		status(self) := asleep
+	}
+	// Retrieve a token from the previous machine
+	if status(self) = asleep and token(self) = undef then {
+		ReactToEvents(self)
+	}	
+	// Check the colour information of the token received
+	if status(self) = asleep and token(self) != undef then {
+		// Reset the token event information (prevents machine from grabbing tokens repeatedly)
+		BlackTokenEvent(self) := false
+		WhiteTokenEvent(self) := false
+		// White token = we are finished
+		if token(self) = whiteToken then {
+			status(self) := asleep
+			finished := true			
+		}
+		// Black token = send off another token, and discard our current token
 		else {
-			InitializeMachine(self)
+			token(self) := undef
 			ForwardToken(whiteToken, nextMachine(self))
 		}
 	}
 }
 
+// Function to create a token event for a machine to receive a token
 rule ForwardToken(token, m) = {
-	if token = black then {
+	// Passing a black token
+	if token = blackToken then {
 		BlackTokenEvent(m) := true
 		WhiteTokenEvent(m) := false
 	}
+	// Passing a white token
 	else {
 		WhiteTokenEvent(m) := true
 		BlackTokenEvent(m) := false
 	}
 }
 
-rule SendMessage(source, target) = {
-	colour(source) := black
-	active(target) := true
+// This function is used to handle the receiving of a token from the previous machine
+rule ReactToEvents(m) = {
+	// Create a black token
+	if BlackTokenEvent(m) then
+		token(m) := blackToken
+	// Create a white token
+	if WhiteTokenEvent(m) then
+		token(m) := whiteToken
+}
+
+// Observes the behaviour of the machines
+rule ObserverProgram = {
+	seqblock
+		if finished = false then {
+		seqblock
+			print "Machine Status"
+			print "m0, colour token status: " + colour(m0) + ", " + token(m0) + ", " + status(m0)
+			print "m1, colour token status: " + colour(m1) + ", " + token(m1) + ", " + status(m1)
+			print "m2, colour token status: " + colour(m2) + ", " + token(m2) + ", " + status(m2)
+			print "m3, colour token status: " + colour(m3) + ", " + token(m3) + ", " + status(m3)
+			print "m4, colour token status: " + colour(m4) + ", " + token(m4) + ", " + status(m4)
+			print "m5, colour token status: " + colour(m5) + ", " + token(m5) + ", " + status(m5)
+			print "m6, colour token status: " + colour(m6) + ", " + token(m6) + ", " + status(m6)
+			print "m7, colour token status: " + colour(m7) + ", " + token(m7) + ", " + status(m7)
+			print "m8, colour token status: " + colour(m8) + ", " + token(m8) + ", " + status(m8)
+		endseqblock
+		}
+		else {
+			print "Global Termination Achieved."
+		}
+	endseqblock
 }
