@@ -27,15 +27,28 @@ function WhiteTokenEvent : Agents -> BOOLEAN
 init InitRule
 
 rule InitRule = {
-//	extend Agents with 0 do
-//		program(0) := @SupervisorMachineProgram(0)
-//	forall m in [1 .. 12] do {
-//		InitializeMachine(m)
-//		extend Agents with m do
-//			program(m) := @RegularMachineProgram(m)
-//		if random < 0.5 then
-//			active(m) := true
-//	}
+	// Specifing the next machine in the sequence.
+	//
+	// To change the number of machines in the simulation, follow these steps:
+	// Change the constant 'numberOfMachines' to the amount of machines desired.
+	// Reconstruct the ring structure like the examples below:
+	// If 3 machines are desired, then nextMachine(m0) := m3
+	// If 4 machines are desired, then nextMachine(m0) := m4
+	// and so forth.
+	numberOfMachines := 8
+	nextMachine(m0) := m8
+	nextMachine(m1) := m0
+	nextMachine(m2) := m1
+	nextMachine(m3) := m2
+	nextMachine(m4) := m3
+	nextMachine(m5) := m4
+	nextMachine(m6) := m5
+	nextMachine(m7) := m6
+	nextMachine(m8) := m7
+	
+	// Constants for setting probability chances
+	wakeUpChance := 0.30
+	sleepChance := 0.32
 
 	// Initialize the states for all the agents
 	forall m in Agents do {
@@ -51,7 +64,7 @@ rule InitRule = {
 	//
 	// NOTE: Using something such as m3 < m5 is not a valid comparison, so I assume values
 	// declared as a universe type cannot be compared as if they were enums.
-	// That's why I introduced these values.
+	// That's why these values are introduced to solve the issue.
 	number(m0) := 0
 	number(m1) := 1
 	number(m2) := 2
@@ -61,19 +74,6 @@ rule InitRule = {
 	number(m6) := 6
 	number(m7) := 7
 	number(m8) := 8
-	
-	// Specifing the next machine in the sequence.
-	// NOTE: The previous code "derived nextMachine = { ..." did not compile, so I changed it
-	// into this form.
-	nextMachine(m0) := m8
-	nextMachine(m1) := m0
-	nextMachine(m2) := m1
-	nextMachine(m3) := m2
-	nextMachine(m4) := m3
-	nextMachine(m5) := m4
-	nextMachine(m6) := m5
-	nextMachine(m7) := m6
-	nextMachine(m8) := m7
 	
 	// This value is used to logically control the ouput the observer program prints
 	finished := false
@@ -108,11 +108,17 @@ rule RegularMachineProgram = {
 	
 	// If the machine is active, it may wake up another machine.
 	// The code to simulate this event follows:
-	if status(self) = active and token(self) != undef then {
-		// 70% chance of waking up another machine
-		if random < 0.70 then {
+	if status(self) = active then {
+		// Chance of waking up another machine
+		// Only execute this code if numberOfMachines > 1 because
+		// a. A cluster of one machine cannot wake up another machine because they don't exist!
+		// b. random * 1000 % (numberOfMachines - 1) will generate a division by 0 error
+		if random < wakeUpChance and numberOfMachines > 1 then {
 			seqblock
-			number := ceil(random * 1000 % 8)
+			number := floor(random * 1000 % (numberOfMachines - 1) + 1)
+			
+			// Prevents a machine from waking itself up
+			if number >= number(self) then number := number + 1
 			
 			// Print some text to help with debugging
 			print "I am machine number " + number(self)
@@ -135,7 +141,10 @@ rule RegularMachineProgram = {
 			}
 			endseqblock
 		}
-		status(self) := asleep
+		// Chance of falling asleep
+		if random < sleepChance then {
+			status(self) := asleep
+		}
 	}
 
 	// When the machine falls asleep, it will forward the token to the next machine.

@@ -1,328 +1,176 @@
 STARTING
-Machine Status
-m0, colour token status: white, undef, active
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, active
-m8, colour token status: white, undef, active
+I am machine number 8
+Machine to be woken up is 2
+
+I am machine number 3
+Machine to be woken up is 2
+
+I am machine number 6
+Machine to be woken up is 2
+
+I am machine number 1
+Machine to be woken up is 7
 
 Machine Status
 m0, colour token status: white, undef, asleep
 m1, colour token status: white, undef, active
 m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
+m3, colour token status: white, undef, asleep
 m4, colour token status: white, undef, active
 m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, active
-m8, colour token status: white, undef, active
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, active
-m8, colour token status: white, undef, active
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, active
-m8, colour token status: white, whiteToken, active
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, active
-m8, colour token status: white, whiteToken, active
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, active
-m8, colour token status: white, whiteToken, active
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
+m6, colour token status: white, undef, asleep
 m7, colour token status: white, undef, active
 m8, colour token status: white, whiteToken, asleep
 
 Machine Status
 m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
+m1, colour token status: black, undef, asleep
 m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
+m3, colour token status: white, undef, asleep
 m4, colour token status: white, undef, active
 m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, whiteToken, active
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, active
 m8, colour token status: white, undef, asleep
 
-I am machine number 7
+I am machine number 4
 Machine to be woken up is 2
 
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, whiteToken, active
-m8, colour token status: white, undef, asleep
+I am machine number 7
+Machine to be woken up is 4
+
+I am machine number 5
+Machine to be woken up is 4
+
+I am machine number 4
+Machine to be woken up is 6
+
+I am machine number 2
+Machine to be woken up is 6
 
 Machine Status
 m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, whiteToken, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, active
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: white, undef, asleep
 m6, colour token status: white, whiteToken, active
 m7, colour token status: white, undef, asleep
 m8, colour token status: white, undef, asleep
 
 Machine Status
 m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, active
-m6, colour token status: white, whiteToken, active
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, active
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: white, undef, asleep
 m6, colour token status: white, whiteToken, active
 m7, colour token status: white, undef, asleep
 m8, colour token status: white, undef, asleep
 
 I am machine number 6
-Machine to be woken up is 2
+Machine to be woken up is 3
 
 Machine Status
 m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
 m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, active
-m6, colour token status: white, whiteToken, active
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, active
+m4, colour token status: black, undef, asleep
+m5, colour token status: white, undef, asleep
 m6, colour token status: white, whiteToken, asleep
 m7, colour token status: white, undef, asleep
 m8, colour token status: white, undef, asleep
 
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, whiteToken, active
-m6, colour token status: white, undef, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, whiteToken, asleep
-m6, colour token status: white, undef, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, whiteToken, asleep
-m6, colour token status: white, undef, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, asleep
-m6, colour token status: white, undef, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, active
-m5, colour token status: white, undef, asleep
-m6, colour token status: white, undef, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-I am machine number 4
-Machine to be woken up is 6
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: white, whiteToken, active
-m5, colour token status: white, undef, asleep
-m6, colour token status: white, undef, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, undef, active
-m4, colour token status: black, whiteToken, asleep
-m5, colour token status: white, undef, asleep
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, blackToken, active
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, asleep
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
-m3, colour token status: white, blackToken, active
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, asleep
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
 I am machine number 3
+Machine to be woken up is 7
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: black, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, active
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: black, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, active
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: black, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, active
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: black, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: white, whiteToken, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, active
+m8, colour token status: white, undef, asleep
+
+I am machine number 7
 Machine to be woken up is 6
 
 Machine Status
 m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
-m2, colour token status: white, undef, active
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: black, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: white, whiteToken, asleep
+m6, colour token status: white, undef, active
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: black, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: white, whiteToken, asleep
+m6, colour token status: white, undef, active
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: black, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, active
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
 m3, colour token status: black, blackToken, asleep
 m4, colour token status: white, undef, asleep
 m5, colour token status: white, undef, asleep
@@ -330,22 +178,88 @@ m6, colour token status: white, undef, active
 m7, colour token status: white, undef, asleep
 m8, colour token status: white, undef, asleep
 
-I am machine number 2
-Machine to be woken up is 7
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: black, blackToken, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, active
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+I am machine number 6
+Machine to be woken up is 1
 
 Machine Status
 m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, active
+m1, colour token status: black, undef, active
+m2, colour token status: black, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, active
+m2, colour token status: black, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, active
+m2, colour token status: black, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, active
+m2, colour token status: black, blackToken, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, active
 m2, colour token status: white, undef, asleep
 m3, colour token status: white, undef, asleep
 m4, colour token status: white, undef, asleep
 m5, colour token status: white, undef, asleep
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, active
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, blackToken, active
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
 m8, colour token status: white, undef, asleep
 
 I am machine number 1
-Machine to be woken up is 5
+Machine to be woken up is 8
 
 Machine Status
 m0, colour token status: white, undef, asleep
@@ -353,8 +267,69 @@ m1, colour token status: black, blackToken, asleep
 m2, colour token status: white, undef, asleep
 m3, colour token status: white, undef, asleep
 m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, active
+
+I am machine number 8
+Machine to be woken up is 5
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
 m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+I am machine number 5
+Machine to be woken up is 7
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, active
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, blackToken, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, active
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, blackToken, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, active
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, blackToken, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, undef, asleep
 m7, colour token status: white, undef, active
 m8, colour token status: white, undef, asleep
 
@@ -364,8 +339,8 @@ m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
 m3, colour token status: white, undef, asleep
 m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, undef, asleep
 m7, colour token status: white, undef, active
 m8, colour token status: white, undef, asleep
 
@@ -375,123 +350,13 @@ m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
 m3, colour token status: white, undef, asleep
 m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, active
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, active
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, active
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, active
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, active
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, undef, asleep
 m7, colour token status: white, undef, active
 m8, colour token status: white, whiteToken, asleep
 
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, active
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, active
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, active
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, active
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, whiteToken, active
-m8, colour token status: white, undef, asleep
-
 I am machine number 7
-Machine to be woken up is 3
+Machine to be woken up is 4
 
 Machine Status
 m0, colour token status: white, undef, asleep
@@ -499,19 +364,19 @@ m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
 m3, colour token status: white, undef, asleep
 m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, whiteToken, active
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, active
 m8, colour token status: white, undef, asleep
 
 Machine Status
 m0, colour token status: white, undef, asleep
 m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, active
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, undef, asleep
 m7, colour token status: white, whiteToken, asleep
 m8, colour token status: white, undef, asleep
 
@@ -519,70 +384,20 @@ Machine Status
 m0, colour token status: white, undef, asleep
 m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, active
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, whiteToken, active
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-I am machine number 6
-Machine to be woken up is 3
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, whiteToken, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, whiteToken, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, active
+m5, colour token status: black, undef, asleep
 m6, colour token status: white, undef, asleep
-m7, colour token status: white, undef, asleep
+m7, colour token status: white, whiteToken, asleep
 m8, colour token status: white, undef, asleep
-
-I am machine number 5
-Machine to be woken up is 3
 
 Machine Status
 m0, colour token status: white, undef, asleep
 m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, active
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, whiteToken, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, active
+m5, colour token status: black, whiteToken, asleep
 m6, colour token status: white, undef, asleep
 m7, colour token status: white, undef, asleep
 m8, colour token status: white, undef, asleep
@@ -591,116 +406,14 @@ Machine Status
 m0, colour token status: white, undef, asleep
 m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
-m3, colour token status: white, whiteToken, active
-m4, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, active
 m5, colour token status: white, undef, asleep
 m6, colour token status: white, undef, asleep
 m7, colour token status: white, undef, asleep
 m8, colour token status: white, undef, asleep
 
-I am machine number 3
-Machine to be woken up is 5
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: black, whiteToken, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, blackToken, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, whiteToken, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, whiteToken, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, active
-m6, colour token status: white, undef, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, asleep
-
-I am machine number 5
+I am machine number 4
 Machine to be woken up is 8
 
 Machine Status
@@ -709,17 +422,6 @@ m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
 m3, colour token status: white, undef, asleep
 m4, colour token status: white, undef, asleep
-m5, colour token status: black, whiteToken, asleep
-m6, colour token status: white, undef, asleep
-m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, active
-
-Machine Status
-m0, colour token status: white, undef, asleep
-m1, colour token status: white, undef, asleep
-m2, colour token status: white, undef, asleep
-m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
 m5, colour token status: white, undef, asleep
 m6, colour token status: white, undef, asleep
 m7, colour token status: white, undef, asleep
@@ -730,7 +432,7 @@ m0, colour token status: white, undef, asleep
 m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
 m3, colour token status: white, undef, asleep
-m4, colour token status: white, blackToken, asleep
+m4, colour token status: white, undef, asleep
 m5, colour token status: white, undef, asleep
 m6, colour token status: white, undef, asleep
 m7, colour token status: white, undef, asleep
@@ -750,6 +452,28 @@ m8, colour token status: white, undef, active
 Machine Status
 m0, colour token status: white, undef, asleep
 m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, active
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, active
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
 m2, colour token status: white, blackToken, asleep
 m3, colour token status: white, undef, asleep
 m4, colour token status: white, undef, asleep
@@ -769,24 +493,44 @@ m6, colour token status: white, undef, asleep
 m7, colour token status: white, undef, asleep
 m8, colour token status: white, undef, active
 
+I am machine number 8
+Machine to be woken up is 4
+
+I am machine number 4
+Machine to be woken up is 5
+
 Machine Status
 m0, colour token status: white, undef, asleep
 m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
 m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
+m4, colour token status: white, undef, active
 m5, colour token status: white, undef, asleep
 m6, colour token status: white, undef, asleep
 m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, active
+m8, colour token status: white, undef, asleep
 
 Machine Status
 m0, colour token status: white, undef, asleep
-m1, colour token status: white, blackToken, asleep
+m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
 m3, colour token status: white, undef, asleep
-m4, colour token status: white, undef, asleep
-m5, colour token status: white, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: white, undef, active
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+I am machine number 5
+Machine to be woken up is 8
+
+Machine Status
+m0, colour token status: white, blackToken, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: black, undef, asleep
 m6, colour token status: white, undef, asleep
 m7, colour token status: white, undef, asleep
 m8, colour token status: white, undef, active
@@ -796,11 +540,804 @@ m0, colour token status: white, blackToken, asleep
 m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
 m3, colour token status: white, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, active
+
+Machine Status
+m0, colour token status: white, blackToken, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, active
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, active
+
+I am machine number 8
+Machine to be woken up is 2
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, active
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, active
+m3, colour token status: white, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, active
+m3, colour token status: white, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, whiteToken, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, active
+m3, colour token status: white, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, whiteToken, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, active
+m3, colour token status: white, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, whiteToken, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+I am machine number 2
+Machine to be woken up is 3
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: white, undef, active
+m4, colour token status: black, undef, asleep
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, whiteToken, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+I am machine number 3
+Machine to be woken up is 8
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: black, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, active
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: black, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: black, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, active
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: black, undef, asleep
+m4, colour token status: black, undef, asleep
+m5, colour token status: black, whiteToken, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, active
+
+I am machine number 8
+Machine to be woken up is 5
+
+I am machine number 5
+Machine to be woken up is 1
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, active
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, active
+m2, colour token status: black, undef, asleep
+m3, colour token status: white, undef, asleep
 m4, colour token status: white, undef, asleep
 m5, colour token status: white, undef, asleep
 m6, colour token status: white, undef, asleep
 m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, active
+m2, colour token status: black, blackToken, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, active
+m2, colour token status: black, blackToken, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, active
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, blackToken, active
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, blackToken, active
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, blackToken, active
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, blackToken, active
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, blackToken, active
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+I am machine number 1
+Machine to be woken up is 7
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, blackToken, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, active
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, active
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, active
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, active
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, blackToken, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, active
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, active
+m8, colour token status: white, whiteToken, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, active
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, whiteToken, active
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, whiteToken, active
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, whiteToken, active
+m8, colour token status: white, undef, asleep
+
+I am machine number 7
+Machine to be woken up is 4
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, active
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, whiteToken, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, active
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, active
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, whiteToken, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, active
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, active
+m5, colour token status: white, whiteToken, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, active
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+I am machine number 4
+Machine to be woken up is 3
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, whiteToken, active
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, whiteToken, active
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+I am machine number 3
+Machine to be woken up is 4
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, blackToken, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, active
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, blackToken, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, active
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+I am machine number 4
+Machine to be woken up is 3
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, active
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, active
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, active
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, blackToken, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, active
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, blackToken, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, active
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+I am machine number 3
+Machine to be woken up is 1
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, active
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, active
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, active
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, whiteToken, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, active
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+I am machine number 1
+Machine to be woken up is 5
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, active
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, whiteToken, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, active
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+I am machine number 5
+Machine to be woken up is 2
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: white, undef, active
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, whiteToken, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: white, undef, active
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, whiteToken, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: white, undef, active
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, whiteToken, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: white, undef, active
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: white, undef, active
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+I am machine number 2
+Machine to be woken up is 4
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, active
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, active
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, active
+m5, colour token status: white, whiteToken, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, active
+m5, colour token status: white, whiteToken, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+I am machine number 4
+Machine to be woken up is 8
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: black, whiteToken, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
 m8, colour token status: white, undef, active
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: black, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, blackToken, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: black, blackToken, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
 
 Machine Status
 m0, colour token status: white, undef, asleep
@@ -811,7 +1348,51 @@ m4, colour token status: white, undef, asleep
 m5, colour token status: white, undef, asleep
 m6, colour token status: white, undef, asleep
 m7, colour token status: white, undef, asleep
-m8, colour token status: white, undef, active
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, whiteToken, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, whiteToken, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, whiteToken, asleep
 
 Machine Status
 m0, colour token status: white, undef, asleep
@@ -852,8 +1433,8 @@ m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
 m3, colour token status: white, undef, asleep
 m4, colour token status: white, undef, asleep
-m5, colour token status: white, whiteToken, asleep
-m6, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, whiteToken, asleep
 m7, colour token status: white, undef, asleep
 m8, colour token status: white, undef, asleep
 
@@ -883,7 +1464,7 @@ Machine Status
 m0, colour token status: white, undef, asleep
 m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
-m3, colour token status: white, whiteToken, asleep
+m3, colour token status: white, undef, asleep
 m4, colour token status: white, undef, asleep
 m5, colour token status: white, undef, asleep
 m6, colour token status: white, undef, asleep
@@ -894,7 +1475,7 @@ Machine Status
 m0, colour token status: white, undef, asleep
 m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
-m3, colour token status: white, whiteToken, asleep
+m3, colour token status: white, undef, asleep
 m4, colour token status: white, undef, asleep
 m5, colour token status: white, undef, asleep
 m6, colour token status: white, undef, asleep
@@ -905,7 +1486,7 @@ Machine Status
 m0, colour token status: white, undef, asleep
 m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
-m3, colour token status: white, whiteToken, asleep
+m3, colour token status: white, undef, asleep
 m4, colour token status: white, undef, asleep
 m5, colour token status: white, undef, asleep
 m6, colour token status: white, undef, asleep
@@ -915,7 +1496,18 @@ m8, colour token status: white, undef, asleep
 Machine Status
 m0, colour token status: white, undef, asleep
 m1, colour token status: white, undef, asleep
-m2, colour token status: white, whiteToken, asleep
+m2, colour token status: white, undef, asleep
+m3, colour token status: white, undef, asleep
+m4, colour token status: white, undef, asleep
+m5, colour token status: white, undef, asleep
+m6, colour token status: white, undef, asleep
+m7, colour token status: white, undef, asleep
+m8, colour token status: white, undef, asleep
+
+Machine Status
+m0, colour token status: white, undef, asleep
+m1, colour token status: white, undef, asleep
+m2, colour token status: white, undef, asleep
 m3, colour token status: white, undef, asleep
 m4, colour token status: white, undef, asleep
 m5, colour token status: white, undef, asleep
@@ -968,7 +1560,7 @@ m7, colour token status: white, undef, asleep
 m8, colour token status: white, undef, asleep
 
 Machine Status
-m0, colour token status: white, undef, asleep
+m0, colour token status: white, whiteToken, asleep
 m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
 m3, colour token status: white, undef, asleep
@@ -979,7 +1571,7 @@ m7, colour token status: white, undef, asleep
 m8, colour token status: white, undef, asleep
 
 Machine Status
-m0, colour token status: white, undef, asleep
+m0, colour token status: white, whiteToken, asleep
 m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
 m3, colour token status: white, undef, asleep
@@ -990,7 +1582,7 @@ m7, colour token status: white, undef, asleep
 m8, colour token status: white, undef, asleep
 
 Machine Status
-m0, colour token status: white, undef, asleep
+m0, colour token status: white, whiteToken, asleep
 m1, colour token status: white, undef, asleep
 m2, colour token status: white, undef, asleep
 m3, colour token status: white, undef, asleep
